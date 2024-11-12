@@ -1,99 +1,28 @@
-# INVENTORY MANAGEMENT SYSTEM
-Inventory Management System is a full-fledged GUI application for maintenance of inventory and to generate sales invoices with keeping records of every sales.
-Consists of following Pages:
-* Login
-* Sales
-* Inventory
-* Extras : Includes Theme Switch, Password Changer
-* Invoice/ Bill
+SISTEMA DE GESTIÓN DE INVENTARIOS
 
-## Features
+El Sistema de Gestión de Inventarios es una aplicación con interfaz gráfica completa para el mantenimiento de inventarios y la generación de facturas de ventas, manteniendo un registro detallado de cada transacción.
+Páginas Incluidas:
 
-#### Fully Functioning Inventory Management System
-###### Fully Functioning Inventory Page
-* Insertion of new product
-* Updating product values
-* Deleting Product
-###### Fully Functioning Sales Page
-* Instant updation of values : Entering quantity updates total price instantly.
-* Categorised Product Selection : Divided into category, sub-category and product Selection boxes.
-* Cart
-* Invoice 
+    Inicio de Sesión
+    Ventas
+    Inventario
+    Extras: Incluye cambio de tema y cambio de contraseña.
+    Factura/Comprobante
 
-#### Secured
-* Encrypted Login : Database shows encrypted username and password in the login table.
-* Secured Entries : In integers entry-boxes only integers allowed(eg: Quantity of product) and in floats entry-boxes only floats alowed(eg: Price of product) and sometimes entries gets disabled untill all data are ready to call that function.
-* Secured Buttons : Some buttons gets disabled untill all data are ready to call that function
-* Secured Sales : Temporary clone database is created upon adding of a product so the quantity doesnt gets vanished upon force-closing of application; Quantity entered always greater than 0 but less than or equal to  max quantity available (0 < quantity_entered > max_quantity+1).
-* Invoice Creation with Backing up records of sales : Backup includes Screenshots and csv file at the datetime of sale and person name.
+Características
+Sistema Completo de Gestión de Inventarios
 
-#### Modern GUI
-* Mordernised GUI : Traditional Tkinter buttons and UI is old Windows 98-like, so many widgets are designed using Photoshop to get more stylish GUI; Most Entry boxes modernised too.
-* Dark and Light Mode Switch
-#### Optimised Database
-* Eliminated Junk Categories and Sub-Categories entries upon deletion of a product which has unique category and sub category, they gets deleted too.
-* Cloning of temporary in-memory database at sales time so that force close of application doesn't corrupt the product quantity value.
+    Página de Inventario: Permite agregar, actualizar y eliminar productos.
+    Página de Ventas: Actualiza precios al ingresar cantidades, organiza productos por categorías y permite la selección directa. Incluye carrito y generación de facturas.
 
+Seguridad
 
-## Scope
-Inventory Management System can be used by an organization or an individual who needs to manage their sales and inventory records.
+    Inicio de sesión encriptado: Los datos de usuario y contraseña están encriptados en la base de datos.
+    Entradas seguras: Solo permite ingresar números en campos de cantidad y precio, y ciertos botones se desactivan hasta que todos los datos estén listos.
+    Control de inventario en ventas: Crea una base de datos temporal que evita pérdida de datos en caso de cierre forzado y controla la cantidad para evitar valores inválidos.
+    Respaldo de facturas y ventas: Cada venta incluye un respaldo con capturas de pantalla y un archivo CSV con la fecha, hora y nombre del responsable.
 
-## Technologies
-Project is created with:
-* Python 3.9
-* OOPS Concept.
-* Tkinter(tk) module for GUI.
-* PILLOW and pyscreenshot external module for Screenshots.
-* Sqlite3 For database.
+Interfaz Moderna
 
-
-## Installation
-1. Download the project to your Device using one of the ways listed below
-   1. git clone the project:
-git clone https://github.com/vishakhg98/Inventory-Management-System.git
-   1. Download Zip using : [Download](https://github.com/vishakhg98/Inventory-Management-System/archive/master.zip)
-	 
-1. (Optional) If want to use virtual environment:
-		
-		venv\Scripts\activate
-
-1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to download the necessary modules using one of the ways listed below.
-   1. To install all necessary modules
-
-			pip install -r requirements.txt
-   1. To install individually
-
-			pip install Pillow==8.0.1
-			pip install pyscreenshot==2.2
-
-## How To Run
-(Optional) Use virtual Environment
-Run main.py file
-
-	venv\Scripts\activate
-	python3 main.py
-
-Username : admin
-Password : password
-
-
-## Screenshots 📸
-![Login](https://github.com/vishakhg98/Inventory-Management-System/blob/master/Screenshots/Dark%20Mode/Login.png)
-![Main Menu](https://github.com/vishakhg98/Inventory-Management-System/blob/master/Screenshots/Dark%20Mode/Main%20Menu.png)
-![Sales](https://github.com/vishakhg98/Inventory-Management-System/blob/master/Screenshots/Dark%20Mode/Sales.png)
-![Inventory](https://github.com/vishakhg98/Inventory-Management-System/blob/master/Screenshots/Dark%20Mode/Inventory.png)
-![Extras](https://github.com/vishakhg98/Inventory-Management-System/blob/master/Screenshots/Dark%20Mode/Extras.png)
-
-for more screenshots visit [Screenshots](https://github.com/vishakhg98/Inventory-Management-System/tree/master/Screenshots) folder in the main branch.
-
-
-## Bugs
-None, if found any bugs please open an issue.
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
-## License
-[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+    Diseño actual: La interfaz se moderniza usando diseños personalizados para una apariencia atractiva.
+    Modo oscuro y claro
